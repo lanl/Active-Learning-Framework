@@ -1,0 +1,58 @@
+{
+    "data_setup": {
+                    "Ntrain":16,
+                    "Nvalid":1,
+                    "Ntest":1,
+                    "hold_out":0.1
+                   },
+    "aev_params": {
+                   "elements":["H","C","N","O"], 
+                   "NRrad":32, 
+                   "Rradcut":4.6, 
+                   "NArad":8, 
+                   "NAang":8,
+                   "Aradcut":3.5, 
+                   "x0":0.8 
+                  },
+    "input_params": {
+                     "eta":0.001, 
+                     "energy":1, 
+                     "force":1,
+                     "fmult":0.1,
+                     "feps":0.001,
+                     "dipole":0,
+                     "cdweight":2.0,
+                     "repuls":0,
+                     "tolr":50,
+                     "tbtchsz":32,
+                     "vbtchsz":16,
+                     "nkde":0,
+                     "pbc":0,
+                     "bboxx":16.0,
+                     "bboxy":16.0,
+                     "bboxz":16.0
+                    },
+    "layers": {
+              "H": [
+                   {"nodes":32,"activation":9,"type":0,"l2norm":0,"l2valu":0.000001},
+                   {"nodes":16,"activation":9,"type":0,"l2norm":0,"l2valu":0.000001},
+                   {"nodes":8,"activation":9,"type":0,"l2norm":0,"l2valu":0.000001}
+                   ],
+              "C": [
+                   {"nodes":32,"activation":9,"type":0,"l2norm":0,"l2valu":0.000001},
+                   {"nodes":16,"activation":9,"type":0,"l2norm":0,"l2valu":0.000001},
+                   {"nodes":8,"activation":9,"type":0,"l2norm":0,"l2valu":0.000001}
+                   ],
+              "N": [
+                   {"nodes":32,"activation":9,"type":0,"l2norm":0,"l2valu":0.000001},
+                   {"nodes":16,"activation":9,"type":0,"l2norm":0,"l2valu":0.000001},
+                   {"nodes":8,"activation":9,"type":0,"l2norm":0,"l2valu":0.000001}
+                   ], 
+              "O": [
+                   {"nodes":32,"activation":9,"type":0,"l2norm":0,"l2valu":0.000001},
+                   {"nodes":16,"activation":9,"type":0,"l2norm":0,"l2valu":0.000001},
+                   {"nodes":8,"activation":9,"type":0,"l2norm":0,"l2valu":0.000001}
+                   ] 
+              }
+}
+

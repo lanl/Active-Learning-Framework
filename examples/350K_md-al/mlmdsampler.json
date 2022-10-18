@@ -1,0 +1,46 @@
+{
+    "bias_params": {
+                     "temperature":350.0,
+                     "timestep":1.0,
+                     "md_max_steps":200000,
+
+                     "enable_e_b": false,
+                     "enable_f_b": false,
+                     "functional":"exp",
+
+                     "alpha_e":0.0, 
+                     "beta_e":1.0,
+                     "rate_e_a":1.15,
+                     "rate_e_b":1.0,
+
+                     "alpha_f":0.0, 
+                     "beta_f":1.0,
+                     "rate_f_a":1.0,
+                     "rate_f_b":1.0,
+
+                     "ramping_interval_a":140000,
+                     "ramping_interval_b":100000000,
+
+                     "iteration_to_set_bias":15000,
+
+                     "bias_step_min":0,
+                     "bias_step_max":10,
+
+                     "sigma_stop_F":0.14,
+                     "sigma_stop_E":0.015,
+
+                     "save_to_restart":false,
+                     "save_to_restart_frequency":1,
+                     "return_xyz_with_highest_":"Es",
+
+                     "step_to_start_ramping":1,
+                     "sigma_stop_sum":0.825,
+                     "md_stop_type":"Separate_manual_std",
+                     "md_steps":1,
+                     "alpha_factor":10.0,
+                     "sigma_factor":4.0,
+                     "alpha":"manual",
+                     "bias_atoms":false
+
+                    }
+}
